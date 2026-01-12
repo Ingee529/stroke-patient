@@ -34,7 +34,6 @@ npm install
 public/audio/
 ├── 痛.mp3
 ├── 癢.mp3
-├── 渴.mp3
 └── ...
 ```
 

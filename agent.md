@@ -127,7 +127,6 @@ export const defaultCategories = [
     phrases: [
       { text: '痛', audioFile: '痛.mp3' },
       { text: '癢', audioFile: '癢.mp3' },
-      { text: '渴', audioFile: '渴.mp3' },
       { text: '冷', audioFile: '冷.mp3' },
       { text: '熱', audioFile: '熱.mp3' },
       { text: '累', audioFile: '累.mp3' },
