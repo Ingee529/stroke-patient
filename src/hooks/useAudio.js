@@ -78,8 +78,9 @@ export const useAudio = () => {
       stop();
     }
 
-    // 優先使用提供的音檔路徑，否則使用預設路徑
-    const audioSrc = audioFile || `/audio/${word}.mp3`;
+    // 使用 Vite 的 base path (import.meta.env.BASE_URL)
+    const basePath = import.meta.env.BASE_URL;
+    const audioSrc = audioFile || `${basePath}audio/${word}.mp3`;
 
     // 嘗試播放音檔
     playWithAudio(audioSrc, word);

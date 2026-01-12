@@ -10,7 +10,8 @@ function App() {
   const { play, stop, isPlaying } = useAudio();
 
   const handleVoiceButtonClick = (word, audioFile) => {
-    play(word, audioFile ? `/audio/${audioFile}` : null);
+    const basePath = import.meta.env.BASE_URL;
+    play(word, audioFile ? `${basePath}audio/${audioFile}` : null);
   };
 
   const currentCategory = defaultCategories[activeTab];
